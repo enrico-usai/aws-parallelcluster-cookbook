@@ -21,8 +21,8 @@ mount '/opt/sge' do
   fstype "nfs"
   options 'hard,intr,noatime,_netdev'
   action %i[mount enable]
-  retries 10
-  retry_delay 6
+  retries 3
+  retry_delay 5
 end
 
 # Setup SGE

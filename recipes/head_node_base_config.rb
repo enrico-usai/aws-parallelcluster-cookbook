@@ -107,8 +107,8 @@ vol_array.each_with_index do |volumeid, index|
     options "_netdev"
     pass 0
     action %i[mount enable]
-    retries 10
-    retry_delay 6
+    retries 3
+    retry_delay 5
   end
 
   # Make sure shared directory permissions are correct
